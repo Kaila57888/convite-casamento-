@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mariana & Gabriel — Nosso Grande Dia</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#faf8f4;color:#3f3933;font-family:Montserrat,sans-serif;font-weight:300}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;background:
+linear-gradient(rgba(38,32,27,.25),rgba(38,32,27,.42)),
+url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-card{color:white;max-width:700px}
+.small{letter-spacing:5px;text-transform:uppercase;font-size:12px}
+h1,h2{font-family:"Cormorant Garamond",serif;font-weight:500}
+h1{font-size:clamp(58px,12vw,105px);line-height:.9;margin:25px 0}
+.hero p{font-size:15px;letter-spacing:2px}
+.btn{display:inline-block;margin-top:28px;padding:13px 28px;border:1px solid rgba(255,255,255,.75);color:white;text-decoration:none;letter-spacing:2px;font-size:11px;text-transform:uppercase}
+section{padding:80px 22px;max-width:1000px;margin:auto;text-align:center}
+h2{font-size:48px;margin:8px 0 25px}
+.divider{width:55px;height:1px;background:#a68c68;margin:20px auto 30px}
+.text{max-width:650px;margin:auto;line-height:1.9;font-size:14px}
+.date{font-family:"Cormorant Garamond",serif;font-size:42px;margin:25px 0 8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}
+.grid img{width:100%;height:300px;object-fit:cover}
+.info{display:grid;grid-template-columns:repeat(2,1fr);gap:25px;margin-top:35px}
+.box{padding:30px;background:#f1ece4}
+.box h3{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:500;margin:0 0 10px}
+.box p{font-size:13px;line-height:1.8}
+.dark{background:#3f3933;color:white;max-width:none}
+.dark .divider{background:#d1b990}
+.count{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}
+.unit{min-width:85px;padding:18px 10px;border:1px solid #d1b990}
+.unit b{display:block;font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:500}
+.unit span{font-size:9px;letter-spacing:2px;text-transform:uppercase}
+.map{margin-top:30px;width:100%;height:260px;border:0}
+footer{text-align:center;padding:45px 20px;background:#eee8df;font-family:"Cormorant Garamond",serif;font-size:25px}
+@media(max-width:650px){.grid{grid-template-columns:1fr 1fr}.grid img{height:210px}.info{grid-template-columns:1fr}section{padding:65px 18px}h2{font-size:40px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-card">
+    <div class="small">Convite de casamento</div>
+    <h1>Mariana<br>&amp; Gabriel</h1>
+    <p>15 • NOVEMBRO • 2026</p>
+    <a class="btn" href="#convite">Abrir convite</a>
+  </div>
+</header>
+
+<section id="convite">
+  <div class="small">Com muito amor</div>
+  <h2>Vamos celebrar juntos?</h2>
+  <div class="divider"></div>
+  <p class="text">Depois de tantos momentos compartilhados, chegou a hora de celebrar o começo de um novo capítulo. Será uma alegria ter você ao nosso lado neste dia tão especial.</p>
+  <div class="date">15 de novembro de 2026</div>
+  <p>às 17h30</p>
+</section>
+
+<section class="dark">
+  <div class="small">Falta pouco</div>
+  <h2>Contagem regressiva</h2>
+  <div class="divider"></div>
+  <div class="count" id="count">
+    <div class="unit"><b id="days">00</b><span>Dias</span></div>
+    <div class="unit"><b id="hours">00</b><span>Horas</span></div>
+    <div class="unit"><b id="mins">00</b><span>Minutos</span></div>
+    <div class="unit"><b id="secs">00</b><span>Segundos</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="small">Nossa história</div>
+  <h2>Um amor para celebrar</h2>
+  <div class="divider"></div>
+  <p class="text">Tudo começou com um encontro inesperado, muitos sorrisos e a certeza de que algumas histórias simplesmente merecem ser vividas. Hoje, queremos dividir com as pessoas que amamos a felicidade de dizer: sim, para sempre.</p>
+</section>
+
+<section>
+  <div class="small">Alguns momentos</div>
+  <h2>Memórias</h2>
+  <div class="divider"></div>
+  <div class="grid">
+    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80" alt="Momento do casal">
+    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80" alt="Casamento">
+    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=80" alt="Celebração">
+    <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=900&q=80" alt="Noivos">
+    <img src="https://images.unsplash.com/photo-1519225495810-7e6c2f6b8b5c?auto=format&fit=crop&w=900&q=80" alt="Flores">
+    <img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&w=900&q=80" alt="Celebração">
+  </div>
+</section>
+
+<section>
+  <div class="small">O grande dia</div>
+  <h2>Detalhes</h2>
+  <div class="divider"></div>
+  <div class="info">
+    <div class="box">
+      <h3>Cerimônia</h3>
+      <p>15 de novembro de 2026<br>17h30<br>Espaço Jardim das Flores</p>
+    </div>
+    <div class="box">
+      <h3>Recepção</h3>
+      <p>Logo após a cerimônia<br>Jantar e celebração<br>Traje: esporte fino</p>
+    </div>
+  </div>
+  <p class="text" style="margin-top:30px">📍 Paracatu — MG</p>
+  <a class="btn" style="color:#3f3933;border-color:#a68c68" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Jardim+das+Flores+Paracatu+MG">Ver localização</a>
+</section>
+
+<section class="dark">
+  <div class="small">Sua presença é especial</div>
+  <h2>Confirme sua presença</h2>
+  <div class="divider"></div>
+  <p class="text">Para nos ajudar na organização, confirme sua presença até 25 de outubro de 2026.</p>
+  <a class="btn" href="https://wa.me/5561999999999?text=Ol%C3%A1!%20Quero%20confirmar%20minha%20presen%C3%A7a%20no%20casamento%20de%20Mariana%20e%20Gabriel." target="_blank">Confirmar pelo WhatsApp</a>
+</section>
+
+<footer>Mariana &amp; Gabriel<br><span style="font-size:15px">“Que o amor seja sempre o nosso caminho.”</span></footer>
+
+<script>
+const target = new Date("2026-11-15T17:30:00-03:00").getTime();
+function update(){
+  const d = target-Date.now();
+  const el=id=>document.getElementById(id);
+  if(d<=0){el("days").textContent=el("hours").textContent=el("mins").textContent=el("secs").textContent="00";return}
+  el("days").textContent=String(Math.floor(d/86400000)).padStart(2,"0");
+  el("hours").textContent=String(Math.floor(d/3600000)%24).padStart(2,"0");
+  el("mins").textContent=String(Math.floor(d/60000)%60).padStart(2,"0");
+  el("secs").textContent=String(Math.floor(d/1000)%60).padStart(2,"0");
+}
+update(); setInterval(update,1000);
+</script>
+</body>
+</html>
